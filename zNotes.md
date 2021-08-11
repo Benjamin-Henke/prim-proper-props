@@ -19,9 +19,10 @@
 # Guest List
 [x] create guest list function
 [x] <h2> tag
-[] table stuff 
+[x] pass guestList as argument as obj
 [x] export guest list function
-[] import into app.js
+[x] input table html
+[x] import into app.js
 
 # Dinner Supplies
 

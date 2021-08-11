@@ -59,6 +59,7 @@ function App() {
     <div className="App">
       <HeaderInfo/>
 
+
       <h2>Party Leader</h2>
 
       {guestList[0] && <h3>{guestList[0].name}</h3>}
@@ -105,7 +106,9 @@ function App() {
         <button type="submit">Add Guest</button>
       </form>
 
-      <GuestList />
+
+      <GuestList guestList={guestList}/>
+
 
       <h2>Dinner Supplies</h2>
       <div>
@@ -117,6 +120,7 @@ function App() {
       <div>
         Knives: {guestList.length * 2}
       </div>
+
 
      <FooterInfo/>
     </div>

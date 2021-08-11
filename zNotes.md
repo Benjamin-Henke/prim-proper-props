@@ -17,6 +17,11 @@
 [x] import into app.js
 
 # Guest List
+[x] create guest list function
+[x] <h2> tag
+[] table stuff 
+[x] export guest list function
+[] import into app.js
 
 # Dinner Supplies
 

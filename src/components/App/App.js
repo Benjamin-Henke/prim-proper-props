@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 // Components
 import HeaderInfo from '../Header/Header';
+import GuestForm from '../GuestForm/GuestForm';
 import GuestList from '../GuestList/GuestList';
 import DinnerSupplies from '../DinnerSupplies/DinnerSupplies';
 import FooterInfo from '../Footer/Footer';
@@ -64,6 +65,8 @@ function App() {
       <h2>Party Leader</h2>
 
       {guestList[0] && <h3>{guestList[0].name}</h3>}
+      <GuestForm />
+
       <h2>Add a new guest</h2>
       <form onSubmit={handleSubmit}>
         <label>

@@ -21,6 +21,7 @@
 [x] <h2> tag
 [x] pass guestList as argument as obj
 [x] input table html
+[x] app side set guestList={guestList}
 [x] export guest list function
 [x] import into app.js
 
@@ -28,7 +29,12 @@
 [x] create dinner supplies function
 [x] pass guestList as argument obj
 [x] paste html
+[x] app side set guestList={guestList}
+[x] export guest list function
 [x] export dinner supplies function
 [x] important into app.js
 
 # Guest Form
+[x] create guest form function
+[x] export guest form function
+[x] important into app.js

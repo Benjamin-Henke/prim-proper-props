@@ -3,12 +3,18 @@
 [x] npm run server
 [x] npm run client
 
-# Header
-[x] create header function im header.js
-[x] export header function in header.js
-[x] import header function into app.js
+# Header.js
+[x] create header function
+[x] <h1> tag
+[x] export header function
+[x] import into app.js
 
-# Footer
+# Footer.js
+[x] create footer function
+[x] <h3> tag
+[x] <p> tag
+[x] export footer function
+[x] import into app.js
 
 # Guest List
 

@@ -10,6 +10,8 @@ import FooterInfo from '../Footer/Footer';
 
 function App() {
   let [guestList, setGuestList] = useState([]);
+  let [newGuestName, setNewGuestName] = useState('');
+  let [newGuestMeal, setNewGuestMeal] = useState('false');
 
   //On load, get guests
   useEffect(() => {
@@ -28,7 +30,7 @@ function App() {
   }
 
 
-  const addGuest = () => {
+  const addGuest = (addGuest) => {
     axios.post('/guests', { name: newGuestName, kidsMeal: newGuestMeal })
       .then(response => {
         // clear inputs
@@ -44,25 +46,14 @@ function App() {
   };
 
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (newGuestName) {
-      addGuest();
-    }
-    else {
-      alert('The new guest needs a name!');
-    }
-  }
-
   console.log(newGuestMeal)
   return (
     <div className="App">
       <HeaderInfo/>
 
-
       <h2>Party Leader</h2>
-
       {guestList[0] && <h3>{guestList[0].name}</h3>}
+
       <GuestForm addGuest={addGuest}/>
 
       <GuestList guestList={guestList}/>

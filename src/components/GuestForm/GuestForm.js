@@ -1,9 +1,19 @@
 import {useState} from 'react';
 
-function GuestForm(){
+function GuestForm({addGuest}){
 
     let [newGuestName, setNewGuestName] = useState('');
     let [newGuestMeal, setNewGuestMeal] = useState('false');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (newGuestName) {
+            addGuest();
+        }
+        else {
+            alert('The new guest needs a name!');
+        }
+    }
 
     return (
         <>

@@ -4,6 +4,7 @@ import './App.css';
 // Components
 import HeaderInfo from '../Header/Header';
 import GuestList from '../GuestList/GuestList';
+import DinnerSupplies from '../DinnerSupplies/DinnerSupplies';
 import FooterInfo from '../Footer/Footer';
 
 function App() {
@@ -109,6 +110,7 @@ function App() {
 
       <GuestList guestList={guestList}/>
 
+      <DinnerSupplies />
 
       <h2>Dinner Supplies</h2>
       <div>

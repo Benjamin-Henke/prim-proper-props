@@ -20,10 +20,15 @@
 [x] create guest list function
 [x] <h2> tag
 [x] pass guestList as argument as obj
-[x] export guest list function
 [x] input table html
+[x] export guest list function
 [x] import into app.js
 
 # Dinner Supplies
+[x] create dinner supplies function
+
+
+[x] export dinner supplies function
+[x] important into app.js
 
 # Guest Form

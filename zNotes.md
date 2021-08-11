@@ -26,8 +26,8 @@
 
 # Dinner Supplies
 [x] create dinner supplies function
-
-
+[x] pass guestList as argument obj
+[x] paste html
 [x] export dinner supplies function
 [x] important into app.js
 

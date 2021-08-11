@@ -2,6 +2,7 @@
 [x] npm install
 [x] npm run server
 [x] npm run client
+[] create database
 
 # Header.js
 [x] create header function
@@ -37,8 +38,6 @@
 # Guest Form
 [x] create guest form function
 [x] import useState
-[] bring in newGuestName/newGuestMeal variables 
-
-
+[x] bring in newGuestName/newGuestMeal variables 
 [x] export guest form function
 [x] important into app.js

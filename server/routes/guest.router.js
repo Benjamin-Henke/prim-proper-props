@@ -28,7 +28,7 @@ router.post('/', (req, res) => {
     // the $1, $2, etc get substituted with the values from the array below
     pool.query(sqlText, [guest.name, guest.kidsMeal])
         .then((result) => {
-            console.log(`Added creature to the database`, guest);
+            console.log(`Added guest to the database`, guest);
             res.sendStatus(201);
         })
         .catch((error) => {

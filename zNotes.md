@@ -2,7 +2,7 @@
 [x] npm install
 [x] npm run server
 [x] npm run client
-[] create database
+[x] create database
 
 # Header.js
 [x] create header function

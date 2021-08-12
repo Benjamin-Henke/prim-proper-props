@@ -5,14 +5,23 @@ function GuestForm({addGuest}){
     let [newGuestName, setNewGuestName] = useState('');
     let [newGuestMeal, setNewGuestMeal] = useState('false');
 
+    let newGuest = {
+        name: newGuestName,
+        kidsMeal: newGuestMeal
+    };
+
     const handleSubmit = (event) => {
         event.preventDefault();
         if (newGuestName) {
-            addGuest();
+            addGuest(newGuest);
         }
         else {
             alert('The new guest needs a name!');
         }
+
+        // Clear inputs
+        setNewGuestName('');
+        setNewGuestMeal(false);
     }
 
     return (

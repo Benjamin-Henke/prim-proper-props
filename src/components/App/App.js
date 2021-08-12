@@ -10,9 +10,7 @@ import FooterInfo from '../Footer/Footer';
 
 function App() {
   let [guestList, setGuestList] = useState([]);
-  let [newGuestName, setNewGuestName] = useState('');
-  let [newGuestMeal, setNewGuestMeal] = useState('false');
-
+  
   //On load, get guests
   useEffect(() => {
     getGuests()
@@ -30,13 +28,9 @@ function App() {
   }
 
 
-  const addGuest = (addGuest) => {
-    axios.post('/guests', { name: newGuestName, kidsMeal: newGuestMeal })
+  const addGuest = (newGuest) => {
+    axios.post('/guests', newGuest)
       .then(response => {
-        // clear inputs
-        setNewGuestName('');
-        setNewGuestMeal(false);
-
         getGuests();
       })
       .catch(err => {
@@ -46,7 +40,7 @@ function App() {
   };
 
 
-  console.log(newGuestMeal)
+  // console.log(newGuestMeal)
   return (
     <div className="App">
       <HeaderInfo/>
